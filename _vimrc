@@ -11,6 +11,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'The-NERD-tree'
 Plugin 'NERD_tree-Project'
 Plugin 'minibufexpl.vim'
+Plugin 'tcomment'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -76,4 +78,6 @@ map <A-v> "+gP                 " Paste from system clipboard with alt-v
 
 " MiniBufExpl
 let g:miniBufExplMapCTabSwitchBufs=1
+" Set the working directory of CtrlP to the directory of the current file
+let g:ctrlp_working_path_mode = 'c'
 
