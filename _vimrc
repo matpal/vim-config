@@ -15,6 +15,7 @@ Plugin 'tcomment'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'delimitMate.vim'
+Plugin 'Valloric/MatchTagAlways'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -60,7 +61,7 @@ autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
 """" Key Bindings 
 let mapleader=","
 let localmapleader=","
-
+let g:user_emmet_leader_key='<C-Z>'
 
 map <C-t><C-t> :tabnew<CR>     " Open new tab
 map <C-t><C-w> :tabclose<CR>   " Close tab
@@ -83,3 +84,6 @@ let g:miniBufExplMapCTabSwitchBufs=1
 " Set the working directory of CtrlP to the directory of the current file
 let g:ctrlp_working_path_mode = 'c'
 
+let g:mta_filetypes = {
+    \ 'html':1, 'xhtml':1, 'xml':1, 'php':1
+    \ }
