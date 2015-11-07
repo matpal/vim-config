@@ -13,6 +13,8 @@ Plugin 'NERD_tree-Project'
 Plugin 'minibufexpl.vim'
 Plugin 'tcomment'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'delimitMate.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
