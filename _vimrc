@@ -35,6 +35,7 @@ set smarttab
 set expandtab
 set tabstop=2
 set shiftwidth=2
+autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 " Search
 set ignorecase
